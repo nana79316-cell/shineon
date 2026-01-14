@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 - 꿈꾸는 초등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .notice-list {
+            list-style: none;
+        }
+
+        .notice-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .notice-item:last-child {
+            border-bottom: none;
+        }
+
+        .notice-content h3 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .notice-content p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .notice-tag {
+            background: #eee;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            margin-right: 15px;
+            text-wrap: nowrap;
+        }
+
+        .notice-date {
+            color: #999;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .notice-tag.important {
+            background: #ffcccc;
+            color: #d63031;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.htm" class="logo">📚 <span>꿈꾸는 도서관</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="intro.htm">소개</a></li>
+                    <li><a href="search.htm">도서검색</a></li>
+                    <li><a href="notice.htm" style="color:var(--primary-color);">공지사항</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title animate">
+            <h1>📢 공지사항</h1>
+            <p>도서관의 새로운 소식을 알려드려요.</p>
+        </div>
+
+        <div class="content-box animate" style="animation-delay: 0.2s;">
+            <ul class="notice-list">
+                <li class="notice-item">
+                    <div style="display: flex; align-items: flex-start;">
+                        <span class="notice-tag important">필독</span>
+                        <div class="notice-content">
+                            <h3>여름방학 도서 대출 안내</h3>
+                            <p>방학 기간 동안 도서 대출 권수가 5권으로 늘어납니다.</p>
+                        </div>
+                    </div>
+                    <span class="notice-date">2023.07.15</span>
+                </li>
+                <li class="notice-item">
+                    <div style="display: flex; align-items: flex-start;">
+                        <span class="notice-tag">행사</span>
+                        <div class="notice-content">
+                            <h3>작가와의 만남 신청 받습니다</h3>
+                            <p>7월 20일 '고양이 학교' 작가님이 오십니다.</p>
+                        </div>
+                    </div>
+                    <span class="notice-date">2023.07.10</span>
+                </li>
+                <li class="notice-item">
+                    <div style="display: flex; align-items: flex-start;">
+                        <span class="notice-tag">안내</span>
+                        <div class="notice-content">
+                            <h3>신착 도서 들어왔습니다 (7월)</h3>
+                            <p>도서관 입구 전시대를 확인해주세요.</p>
+                        </div>
+                    </div>
+                    <span class="notice-date">2023.07.01</span>
+                </li>
+                <li class="notice-item">
+                    <div style="display: flex; align-items: flex-start;">
+                        <span class="notice-tag">안내</span>
+                        <div class="notice-content">
+                            <h3>도서관 에티켓을 지켜주세요</h3>
+                            <p>도서관에서는 조용히, 뛰지 않아요.</p>
+                        </div>
+                    </div>
+                    <span class="notice-date">2023.03.02</span>
+                </li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.htm"
+                style="background: var(--text-color); color: white; padding: 10px 20px; border-radius: 20px;">🏠 홈으로
+                가기</a>
+        </div>
+    </main>
+    <footer>
+        <p>꿈꾸는 초등학교 도서관 | 운영시간: 09:00 - 16:30 | 문의: 02-123-4567</p>
+    </footer>
+</body>
+
+</html>

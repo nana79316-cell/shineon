@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신착 도서 - 꿈꾸는 초등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .new-book-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .new-book-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .new-book-item:hover {
+            transform: translateX(10px);
+            border-left: 5px solid var(--success-color);
+        }
+
+        .date-badge {
+            background: var(--success-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .book-details h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .book-details p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.htm" class="logo">📚 <span>꿈꾸는 도서관</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="intro.htm">소개</a></li>
+                    <li><a href="search.htm">도서검색</a></li>
+                    <li><a href="notice.htm">공지사항</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title animate">
+            <h1>✨ 신착 도서</h1>
+            <p>도서관에 새로 들어온 친구들을 소개해요.</p>
+        </div>
+
+        <div class="new-book-list animate" style="animation-delay: 0.2s;">
+            <div class="new-book-item">
+                <span class="date-badge">NEW</span>
+                <div class="book-details">
+                    <h3>흔한남매 11</h3>
+                    <p>흔한남매 (지은이)</p>
+                </div>
+            </div>
+            <div class="new-book-item">
+                <span class="date-badge">NEW</span>
+                <div class="book-details">
+                    <h3>이상한 과자 가게 전천당 15</h3>
+                    <p>히로시마 레이코 (지은이)</p>
+                </div>
+            </div>
+            <div class="new-book-item">
+                <span class="date-badge">NEW</span>
+                <div class="book-details">
+                    <h3>그리스 로마 신화 29</h3>
+                    <p>박시연 (지은이)</p>
+                </div>
+            </div>
+            <div class="new-book-item">
+                <span class="date-badge">NEW</span>
+                <div class="book-details">
+                    <h3>Go Go 카카오프렌즈 25</h3>
+                    <p>김미영 (지은이)</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.htm"
+                style="background: var(--text-color); color: white; padding: 10px 20px; border-radius: 20px;">🏠 홈으로
+                가기</a>
+        </div>
+    </main>
+    <footer>
+        <p>꿈꾸는 초등학교 도서관 | 운영시간: 09:00 - 16:30 | 문의: 02-123-4567</p>
+    </footer>
+</body>
+
+</html>

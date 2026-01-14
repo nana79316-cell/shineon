@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 검색 - 꿈꾸는 초등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-container {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #e3f2fd;
+            border-radius: 20px;
+        }
+
+        .search-box {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 5px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 15px 25px;
+            border: none;
+            outline: none;
+            font-size: 1.1rem;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .search-box button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background: #2980b9;
+        }
+
+        .popular-tags {
+            margin-top: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.htm" class="logo">📚 <span>꿈꾸는 도서관</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="intro.htm">소개</a></li>
+                    <li><a href="search.htm" style="color:var(--primary-color);">도서검색</a></li>
+                    <li><a href="notice.htm">공지사항</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title animate">
+            <h1>🔍 도서 검색</h1>
+            <p>찾고 싶은 책 제목이나 작가 이름을 입력하세요.</p>
+        </div>
+
+        <div class="content-box animate" style="animation-delay: 0.2s;">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="예: 해리포터, 과학만화...">
+                    <button>검색</button>
+                </div>
+                <div class="popular-tags">
+                    <span>인기 검색어: </span>
+                    <span class="tag">#와니니</span>
+                    <span class="tag">#전천당</span>
+                    <span class="tag">#흔한남매</span>
+                    <span class="tag">#과학</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.htm"
+                style="background: var(--text-color); color: white; padding: 10px 20px; border-radius: 20px;">🏠 홈으로
+                가기</a>
+        </div>
+    </main>
+    <footer>
+        <p>꿈꾸는 초등학교 도서관 | 운영시간: 09:00 - 16:30 | 문의: 02-123-4567</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이달의 추천 도서 - 꿈꾸는 초등학교 도서관</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .book-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .book-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-cover {
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 3rem;
+        }
+
+        .book-info {
+            padding: 1rem;
+        }
+
+        .book-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .book-author {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.htm" class="logo">📚 <span>꿈꾸는 도서관</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="intro.htm">소개</a></li>
+                    <li><a href="search.htm">도서검색</a></li>
+                    <li><a href="notice.htm">공지사항</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-title animate">
+            <h1>👍 이달의 추천 도서</h1>
+            <p>사서 선생님이 강력 추천하는 재미있는 책들!</p>
+        </div>
+
+        <div class="book-grid animate" style="animation-delay: 0.2s;">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <div class="book-cover" style="background: #FFD166;">📖</div>
+                <div class="book-info">
+                    <div class="book-title">마법의 설탕 두 조각</div>
+                    <div class="book-author">미하엘 엔데</div>
+                </div>
+            </div>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <div class="book-cover" style="background: #4ECDC4;">📘</div>
+                <div class="book-info">
+                    <div class="book-title">푸른 사자 와니니</div>
+                    <div class="book-author">이현</div>
+                </div>
+            </div>
+            <!-- Book 3 -->
+            <div class="book-card">
+                <div class="book-cover" style="background: #FF6B6B;">📕</div>
+                <div class="book-info">
+                    <div class="book-title">장수탕 선녀님</div>
+                    <div class="book-author">백희나</div>
+                </div>
+            </div>
+            <!-- Book 4 -->
+            <div class="book-card">
+                <div class="book-cover" style="background: #A55EEA;">📙</div>
+                <div class="book-info">
+                    <div class="book-title">어린 왕자</div>
+                    <div class="book-author">생텍쥐페리</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.htm"
+                style="background: var(--text-color); color: white; padding: 10px 20px; border-radius: 20px;">🏠 홈으로
+                가기</a>
+        </div>
+    </main>
+    <footer>
+        <p>꿈꾸는 초등학교 도서관 | 운영시간: 09:00 - 16:30 | 문의: 02-123-4567</p>
+    </footer>
+</body>
+
+</html>
